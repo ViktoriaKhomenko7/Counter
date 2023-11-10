@@ -2,14 +2,14 @@ import React from 'react';
 
 type PropsType = {
     name: string
-    callback: ()=>void
+    callback: () => void
     disabled: boolean
 }
-export const Button = (props:PropsType) => {
+export const Button = (props: PropsType) => {
     return (
-        <button
-            onClick={props.callback}
-            disabled={props.disabled}
+        <button className="button"
+                onClick={props.callback}
+                disabled={props.disabled}
         >{props.name}</button>
     );
 };
